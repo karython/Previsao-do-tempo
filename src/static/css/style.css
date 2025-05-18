@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #00bfff; /* azul celeste */
+}
+
+.container-index {
+    max-width: 700px;
+    margin: 60px auto;
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #00bfff; /* azul celeste */
+}
+
+h1 {
+    text-align: center;
+    color: #00bfff;
+}
+
+label, select, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.meu-botao {
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.meu-botao:hover {
+    background-color: #009acd;
+}
+  
+ 
+h2 {
+    
+    color: #007acc;
+}
+.dia {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+.dia:last-child {
+    border: none;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto; ;
+    gap: 16px;
+    padding: 20px 0;
+}
+
+.card {
+    flex: 0 0 250px; /* largura fixa */
+    background-color: #e6f7ff;
+    border-left: 4px solid #00bfff;
+    border-radius: 10px;
+    padding: 16px;
+    width: 220px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    min-width: 200px; /* largura mínima */
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.botao-voltar {
+    display: block;
+    margin: 30px auto 0;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    background-color: #00bfff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.botao-voltar:hover {
+    background-color: #009acd;
+}

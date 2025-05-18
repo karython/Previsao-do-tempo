@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Previsão de {{ cidade }} - {{ estado }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+
+</head>
+<body>
+    <div class="container">
+        <h1>Previsão para {{ cidade }}, {{ estado }}</h1>
+
+        <div class="cards-container">
+            {% for dia in previsoes %}
+            <div class="card">
+                <h2>{{ dia.dia_semana }}</h2>
+                <p><strong>Clima:</strong> {{ dia.clima }}</p>
+                <p><strong>Temp. Mín:</strong> {{ dia.temp_min }}°C</p>
+                <p><strong>Temp. Máx:</strong> {{ dia.temp_max }}°C</p>
+                <p><strong>Umidade:</strong> {{ dia.umidade }}%</p>
+                <p><strong>Vento:</strong> {{ dia.vento }} km/h</p>
+                <p><strong>Chuva:</strong> {{ dia.chuva }} mm</p>
+                <!--<p><strong>Radiação solar:</strong> {{ dia.radiacao_solar }} W/m²</p>-->
+            </div>
+            {% endfor %}
+        </div>
+
+        <a href="/" class="botao-voltar">← Voltar</a>
+    </div>
+</body>
+</html>
